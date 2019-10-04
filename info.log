@@ -293,3 +293,75 @@
 {"message":"Invalid url 'htp://invalid-url' supplied","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
 {"message":"Bookmark with id f35aca3d-dc7a-45bd-9cb1-b4fdda0aeb0d created","level":"info"}
+{"message":"Unauthorized request to path: /square/5","level":"error"}
+{"message":"BookmarksService.square(...).then is not a function","level":"error"}
+{"message":"BookmarksService.square(...).then is not a function","level":"error"}
+{"message":"Invalid status code: 25","level":"error"}
+{"message":"Unauthorized request to path: /square/17","level":"error"}
+{"message":"Unauthorized request to path: /square/17","level":"error"}
+{"message":"Unauthorized request to path: /square/17","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"select * from \"bookmarks_data\" - relation \"bookmarks_data\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"select * from \"bookmarks_data\" - relation \"bookmarks_data\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"ArticlesService is not defined","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"knex.select is not a function","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/10","level":"error"}
+{"message":"Cannot create property 'next' on string 'bookmark_data'","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"BookmarksService.getBookmarkById is not a function","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Found bookmark with id 4","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Undefined binding(s) detected when compiling FIRST. Undefined column(s): [id] query: select * from \"bookmark_data\" where \"id\" = ? limit ?","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"BookmarksService.getBookmarkById is not a function","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/4","level":"error"}
+{"message":"Found bookmark with id 4","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"BookmarksService.getBookmarkById is not a function","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Found bookmark with id 3","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"BookmarksService.getBookmarkById is not a function","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
+{"message":"Found bookmark with id 3","level":"info"}

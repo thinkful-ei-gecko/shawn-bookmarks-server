@@ -2,16 +2,24 @@ const express = require('express')
 const uuid = require('uuid/v4')
 const { isWebUri } = require('valid-url')
 const logger = require('../logger')
-const store = require('../store')
+const BookmarksService = require('./bookmarks-service');
 
 const bookmarksRouter = express.Router()
 const bodyParser = express.json()
 
 bookmarksRouter
   .route('/bookmarks')
-  .get((req, res) => {
-    res.json(store.bookmarks)
+  .get((req, res, next) => {
+    const knexInstance = req.app.get('db')
+    BookmarksService.getAllBookmarks(knexInstance)
+      .then(boookmarks => {
+        res.json(boookmarks)
+      })
+      .catch(next)
   })
+
+/************************NOT REFACTORED***************************** 
+
   .post(bodyParser, (req, res) => {
     for (const field of ['title', 'url', 'rating']) {
       if (!req.body[field]) {
@@ -42,22 +50,33 @@ bookmarksRouter
       .json(bookmark)
   })
 
+
+*********************************************************************/
+
 bookmarksRouter
   .route('/bookmarks/:bookmark_id')
-  .get((req, res) => {
-    const { bookmark_id } = req.params
-
-    const bookmark = store.bookmarks.find(c => c.id == bookmark_id)
-
-    if (!bookmark) {
-      logger.error(`Bookmark with id ${bookmark_id} not found.`)
-      return res
-        .status(404)
-        .send('Bookmark Not Found')
-    }
-
-    res.json(bookmark)
+  .get((req, res, next) => {
+    const { bookmark_id } = req.params;
+    BookmarksService.getById(req.app.get('db'), bookmark_id)
+      .then((bookmark) => {
+        if (!bookmark) {
+          logger.error(`Bookmark with id ${bookmark_id} not found.`);
+          return res
+            .status(404)
+            .json({
+              error: { message: `Bookmark not found` }
+            });
+        }
+        logger.info(`Found bookmark with id ${bookmark_id}`);
+        return res.status(200).json(bookmark);
+      })
+      .catch(next);
   })
+
+
+
+  /************************NOT REFACTORED*****************************
+   
   .delete((req, res) => {
     const { bookmark_id } = req.params
 
@@ -77,5 +96,7 @@ bookmarksRouter
       .status(204)
       .end()
   })
+
+  *********************************************************************/
 
 module.exports = bookmarksRouter
