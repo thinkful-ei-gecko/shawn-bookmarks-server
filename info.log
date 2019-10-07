@@ -365,3 +365,11 @@
 {"message":"BookmarksService.getBookmarkById is not a function","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks/3","level":"error"}
 {"message":"Found bookmark with id 3","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"select * from \"bookmark_data\" - relation \"bookmark_data\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/123456","level":"error"}
+{"message":"select * from \"bookmark_data\" where \"id\" = $1 limit $2 - relation \"bookmark_data\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"select * from \"bookmark_data\" - relation \"bookmark_data\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/123456","level":"error"}
+{"message":"select * from \"bookmark_data\" where \"id\" = $1 limit $2 - relation \"bookmark_data\" does not exist","level":"error"}

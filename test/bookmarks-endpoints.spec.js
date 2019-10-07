@@ -17,11 +17,11 @@ describe.only('Bookmarks Endpoints', function() {
   })
 
   before('clean table', () => {
-    return db('bookmark_data').truncate()
+    return db('bookmarks_data').truncate()
   })
 
   afterEach('cleanup', () => {
-    return db('bookmark_data').truncate()
+    return db('bookmarks_data').truncate()
   })
 
   after('end connection with database', () => {
